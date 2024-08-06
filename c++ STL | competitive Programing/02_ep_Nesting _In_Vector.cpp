@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 using namespace std;
 
 void printvec(vector<int> &v) {
@@ -12,7 +13,7 @@ int main() {
     int N;
     cin >> N;
 
-    vector<int> v(N);
+    vector<vector<int>> v(N); // Vector of vectors
 
     for (int i = 0; i < N; ++i) {
         int n;
@@ -21,11 +22,17 @@ int main() {
         for (int j = 0; j < n; ++j) {
             int x;
             cin >> x;
-            v.push_back(x);
+            v[i].push_back(x); // Correct usage of push_back
         }
     }
 
+    for (int i = 0; i < N; ++i) {
+        printvec(v[i]); // Print each vector in the vector of vectors
+    }
+
+    return 0;
 }
+
 
 //--------------------------------------------------
 
