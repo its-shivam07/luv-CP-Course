@@ -33,6 +33,15 @@ int main() {
     return 0;
 }
 
+// 3       // Number of groups
+// 3       // Number of elements in group 1
+// 1 2 3   // Elements of group 1
+// 2       // Number of elements in group 2
+// 4 5     // Elements of group 2
+// 4       // Number of elements in group 3
+// 6 7 8 9 // Elements of group 3
+
+
 
 //--------------------------------------------------
 
